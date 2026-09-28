@@ -1,0 +1,19 @@
+# Credentials and environment configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local operating-system and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Generated or sensitive product data
+exports/
+data/
+member-data/
+payloads/
+logs/
