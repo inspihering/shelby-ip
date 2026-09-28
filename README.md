@@ -15,16 +15,20 @@ Do not add member data, customer records, Airtable exports, payment data, applic
 
 ```text
 skills/   Original source skill files, preserved exactly
+source/   Exact, browsable extraction of each skill package
 /docs     Inventory, integrity records, and repository governance
 ```
+
+GitHub does not render the ZIP-based `.skill` packages directly. Review the substantive methodology—frameworks, workflows, formulas, messaging rules, design guides, and prompt guardrails—in the [`source/`](source/) directory. The original packages in `skills/` remain canonical; see [`docs/EXTRACTED-SOURCE.md`](docs/EXTRACTED-SOURCE.md) for the relationship between the two representations.
 
 ## Source handling rules
 
 1. Treat each file in `skills/` as an original source artifact.
 2. Make edits through a documented pull request or commit that explains the substantive framework change.
 3. Update `docs/IP-INVENTORY.md` whenever a source file changes or a new one is added.
-4. Do not copy credentials or member content into documentation examples.
-5. Keep this repository private. Add collaborators only when they need access to the original methodology.
+4. Regenerate the matching `source/` extraction whenever a canonical package changes.
+5. Do not copy credentials or member content into documentation examples.
+6. Keep this repository private. Add collaborators only when they need access to the original methodology.
 
 ## Relationship to Cadence
 
